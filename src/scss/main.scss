@@ -15,9 +15,12 @@ TABLE OF CONTENTS:
 
 /* 0. Reset ================================= */
 @import 'reset';
-$primary-color: #fff;
-$secondary-color: #000;
-$accent-color: #c40000;
+$primary-color: #94d6ba;
+$secondary-color: #7f4882;
+$accent-color: #00999e;
+$accent-color2: #162343;
+
+
 
 
 
@@ -27,18 +30,24 @@ $accent-color: #c40000;
 	box-sizing: border-box;
 }
 html{
-	background-color: #424242;
+	background-color: $accent-color;
 	font-family: 'Arvo', serif;
 }
 
 header{
-	background: linear-gradient(to bottom, rgba(135,133,133,1) 0%,rgba(36,35,35,1) 53%,rgba(5,5,4,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: $accent-color2;
 	color: $primary-color; 
-	width: 100%;	
+	width: 100%;
+
+	.page{
+		display: flex;
+		justify-content: space-between;
+		padding: 20px 5%;
+	}
 		
 	h1{
 		text-transform: uppercase;
-		padding-top: 20px;
+		padding: 15px 0;
 		font-weight: bold;
 		font-size: 32px;
 	}
@@ -50,12 +59,21 @@ header{
 	nav{
 		.hamburger{
 			button{
+				background: none;
+				border: none;
+				width: 65px;
+				padding: 10px;
+				transition: .25s;
+				
 				div{
 					background: $accent-color;
-					height: 12px;
-					width: 4.722222222222222%; //68/1440
-					border-radius: 10px;
-					margin-bottom: 10px;
+					height: 8px;
+					border-radius: 5px;
+					margin: 0 0 8px;
+				}
+
+				&:hover{
+					transform: rotate(90deg);
 				}
 			}	
 		}
@@ -63,6 +81,7 @@ header{
 		ul{
 			position: absolute;
 			top: 0;
+			left: 0;
 			background-color: transparentize(#000, .2); 
 			height: 975px;
 			width: 100%;
@@ -70,35 +89,41 @@ header{
 			padding-top: 40px;
 
 			li{
-				margin: 40px 6% 0; //115/1440
-				padding: 10px;
+				margin: 55px 6% 0; //115/1440
 				font-size: 20px;	
+				text-align: center;
 			}
 
 			a{
 				color: $primary-color;
 				text-transform: uppercase;
 				text-decoration: none;
-				font-size: 15px;
+				font-size: 25px;
+				padding: 15px;
+				transition: .3s;				
 
 				&:hover{
-					color: $accent-color;
+					color: $secondary-color;
 					cursor: pointer;
 				}
 			}
 
 			button{
-				color: $accent-color;
-				font-size: 60px;
+				position: absolute;
+				top: 0;
+				right: 0;
+				color: $primary-color;
+				font-size: 40px;
 				float: right;
-				padding: 10px;
+				padding: 20px;
 				cursor: pointer;
 				font-family: arial;
 				background: transparent;
 				border: none;
+				transition: .3s;
 
 				&:hover{
-					color: $primary-color;
+					color: $secondary-color;
 				}
 			}				
 		}
@@ -151,7 +176,7 @@ header{
 			}	
 
 			a{
-				background: linear-gradient(to bottom, rgba(135,133,133,1) 0%,rgba(36,35,35,1) 53%,rgba(5,5,4,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				background: $accent-color2;
 				font-size: 15px;
 				box-shadow: -2px 0 0 0 #595959;
 			}

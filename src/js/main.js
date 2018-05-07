@@ -5,6 +5,7 @@ var x = document.querySelector("nav ul button")
 dropdown.style.display ="none";
 
 burger.addEventListener("click", function(){
+	burger.style.display = "none"
 	if( dropdown.style.display === "none" ) {
 		dropdown.style.display = "block";
 	}	
@@ -12,4 +13,5 @@ burger.addEventListener("click", function(){
 
 x.addEventListener("click", function(){
 	dropdown.style.display = "none"
+	burger.style.display = "block"
 });
