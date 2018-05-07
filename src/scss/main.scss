@@ -15,6 +15,10 @@ TABLE OF CONTENTS:
 
 /* 0. Reset ================================= */
 @import 'reset';
+$primary-color: #fff;
+$secondary-color: #000;
+$accent-color: #c40000;
+
 
 
 /* 1. Main Layout ================================= */
@@ -29,9 +33,9 @@ html{
 
 header{
 	background: linear-gradient(to bottom, rgba(135,133,133,1) 0%,rgba(36,35,35,1) 53%,rgba(5,5,4,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	color: #fff; 
-	width: 100%;
-	
+	color: $primary-color; 
+	width: 100%;	
+		
 	h1{
 		text-transform: uppercase;
 		padding-top: 20px;
@@ -40,27 +44,89 @@ header{
 	}
 
 	span{
-		color: #c40000;
+		color: $accent-color;
 	}
 	
 	nav{
+		.hamburger{
+			button{
+				div{
+					background: $accent-color;
+					height: 12px;
+					width: 4.722222222222222%; //68/1440
+					border-radius: 10px;
+					margin-bottom: 10px;
+				}
+			}	
+		}
 
-		a{
-			text-transform: uppercase;
-			text-decoration: none;
-			background: linear-gradient(to bottom, rgba(135,133,133,1) 0%,rgba(36,35,35,1) 53%,rgba(5,5,4,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-			color: white;
-			font-size: 15px;
-			box-shadow: -2px 0 0 0 #595959;
-		}	
+		ul{
+			position: absolute;
+			top: 0;
+			background-color: transparentize(#000, .2); 
+			height: 975px;
+			width: 100%;
+			z-index: 20;
+			padding-top: 40px;
+
+			li{
+				margin: 40px 6% 0; //115/1440
+				padding: 10px;
+				font-size: 20px;	
+			}
+
+			a{
+				color: $primary-color;
+				text-transform: uppercase;
+				text-decoration: none;
+				font-size: 15px;
+
+				&:hover{
+					color: $accent-color;
+					cursor: pointer;
+				}
+			}
+
+			button{
+				color: $accent-color;
+				font-size: 60px;
+				float: right;
+				padding: 10px;
+				cursor: pointer;
+				font-family: arial;
+				background: transparent;
+				border: none;
+
+				&:hover{
+					color: $primary-color;
+				}
+			}				
+		}
 	}		
 }
 
 /*Small Tablet*/
-@media screen and (min-width: 768px){}
+@media screen and (min-width: 768px){
+	header{
+		nav{
+			.hamburger{
+				display: none;
+			}
+			ul{
+				display: block;
+
+				div{
+					display: none;
+				}	
+			}
+		}
+	}
+}
 
 /*Large Tablet*/
-@media screen and (min-width: 1024px){}
+@media screen and (min-width: 1024px){
+
+}
 
 /*Desktop*/
 @media screen and (min-width: 1240px){
@@ -83,6 +149,12 @@ header{
 			ul{
 				margin-top: 25px
 			}	
+
+			a{
+				background: linear-gradient(to bottom, rgba(135,133,133,1) 0%,rgba(36,35,35,1) 53%,rgba(5,5,4,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				font-size: 15px;
+				box-shadow: -2px 0 0 0 #595959;
+			}
 		}
 	}
 }
