@@ -96,7 +96,7 @@ header h1 {
 	font-size: 2.4em;
 }
 
-header span {
+header h1 span {
 	color: #00999e;
 }
 
@@ -173,14 +173,14 @@ header nav .second-nav {
 	display: none;
 }
 
-.home-section {
+.home-section .hero {
 	background-image: url(../img/homebg.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 485px;
 }
 
-.home-section .hero {
+.home-section .hero h2 {
 	padding: 30px 5%;
 	float: left;
 	background-color: #94d6ba;
@@ -188,9 +188,6 @@ header nav .second-nav {
 	margin: 60px 0;
 	display: flex;
 	flex: 1 100%;
-}
-
-.home-section .hero h2 {
 	font-size: 1.65em;
 	color: #162343;
 	flex: 2;
@@ -202,6 +199,87 @@ header nav .second-nav {
 	color: #00999e;
 	flex: 1;
 	transition: .5s;
+}
+
+.home-section .about {
+	background-color: #94d6ba;
+}
+
+.home-section .about h3 {
+	padding: 15px 5%;
+	font-size: 2em;
+	color: #94d6ba;
+	background: #162343;
+}
+
+.home-section .about h3 span {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #94d6ba;
+}
+
+.home-section .about div {
+	padding: 20px 5% 50px;
+}
+
+.home-section .about div ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+.home-section .about div ul li {
+	border: 2px solid #162343;
+}
+
+.home-section .about div p {
+	margin: 20px 0;
+	color: #162343;
+}
+
+.home-section .about div a {
+	text-decoration: none;
+	color: #7f4882;
+}
+
+.home-section .about div a:hover {
+	color: #00999e;
+}
+
+.home-section .student figure {
+	margin: 20px 5%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.home-section .student figure figcaption {
+	line-height: 20px;
+}
+
+.home-section .info {
+	background: #7f4882;
+	padding: 20px 0%;
+}
+
+.home-section .info figure figcaption {
+	color: #162343;
+}
+
+.home-section .info figure figcaption h3 {
+	font-size: 1.9em;
+}
+
+.home-section .info figure figcaption p {
+	margin: 15px 0 30px;
+}
+
+.home-section .info figure figcaption a {
+	text-decoration: none;
+	color: #00999e;
+}
+
+.home-section .info figure figcaption a:hover {
+	color: #94d6ba;
 }
 
 /*Large Phone*/
@@ -234,19 +312,21 @@ header nav .second-nav {
 	}
 	header nav .second-nav {
 		display: flex;
+		width: 0%;
 	}
 	header nav .second-nav li {
 		margin-top: 22px;
 	}
 	header nav .second-nav a {
 		text-decoration: none;
-		font-size: 1.3em;
+		font-size: 1.1em;
 		color: #7f4882;
 		text-transform: uppercase;
-		padding: 0 12%;
+		margin: 45px 12%;
+		border-left: 1px solid #94d6ba;
+		border-right: 1px solid #94d6ba;
 	}
-	border
-header nav .second-nav a:hover {
+	header nav .second-nav a:hover {
 		color: #94d6ba;
 	}
 }

@@ -46,10 +46,10 @@ header{
 		padding: 15px 0;
 		font-weight: bold;
 		font-size: 2.4em;
-	}
 
-	span{
-		color: $accent-color;
+		span{
+			color: $accent-color;
+		}
 	}
 	
 	nav{
@@ -131,21 +131,21 @@ header{
 }
 
 .home-section{
-	background-image: url(../img/homebg.jpg);
-	background-position: center;
-	background-repeat: no-repeat; 
-	height: 485px;
 	
 	.hero{
-		padding: 30px 5%;
-		float: left;
-		background-color: $primary-color;
-		opacity: .9;
-		margin: 60px 0; 
-		display: flex;
-		flex: 1 100%;
+		background-image: url(../img/homebg.jpg);
+		background-position: center;
+		background-repeat: no-repeat; 
+		height: 485px;
 		
 		h2{
+			padding: 30px 5%;
+			float: left;
+			background-color: $primary-color;
+			opacity: .9;
+			margin: 60px 0; 
+			display: flex;
+			flex: 1 100%;
 			font-size: 1.65em;
 			color: $accent-color2;
 			flex: 2;
@@ -159,7 +159,95 @@ header{
 			transition: .5s;
 		}	
 	}
+
+	.about{
+		background-color: $primary-color;	
+
+		h3{
+			padding: 15px 5%;
+			font-size: 2em;
+			color: $primary-color;
+			background: $accent-color2;
+
+			span{
+				text-transform: uppercase;
+				font-weight: bold;
+				color: $primary-color;
+			}
+		}
+		div{
+			padding: 20px 5% 50px;
+
+			ul{
+				display: flex;
+				justify-content: space-between;
+
+				li{
+					border: 2px solid $accent-color2;
+				}
+			}
+			
+			p{
+				margin: 20px 0;
+				color: $accent-color2;
+			}
+
+			a{
+				text-decoration: none;
+				color: $secondary-color;
+
+				&:hover{
+					color: $accent-color;
+				}
+			}
+		}
+	}
+
+	.student{
+
+		figure{
+			margin: 20px 5%;
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 20px;
+
+			figcaption{
+				line-height: 20px;
+
+			}
+		}
+	}
+
+	.info{
+		background: $secondary-color;
+		padding: 20px 0%;
+
+		figure{
+			figcaption{
+				color: $accent-color2;
+
+				h3{
+					font-size: 1.9em;
+				}
+
+				p{
+					margin: 15px 0 30px;
+				}
+
+				a{
+					text-decoration: none;
+					color: $accent-color;
+
+					&:hover{
+						color: $primary-color;
+					}
+				}
+			}
+		}
+	}
 }
+
+
 
 /*Large Phone*/
 @media screen and (min-width: 550px){
@@ -201,6 +289,7 @@ header{
 			}
 			.second-nav{
 				display: flex; 
+				width: 0%;
 
 				li{
 					margin-top: 22px;
@@ -208,12 +297,13 @@ header{
 
 				a{	
 					text-decoration: none;
-					font-size: 1.3em;
+					font-size: 1.1em;
 					color: $secondary-color;
 					text-transform: uppercase;
-					padding: 0 12%;
-					border
-					
+					margin: 45px 12%;
+					border-left: 1px solid $primary-color;
+					border-right: 1px solid $primary-color;
+
 					&:hover{
 						color: $primary-color;
 					}
