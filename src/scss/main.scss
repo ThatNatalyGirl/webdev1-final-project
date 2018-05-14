@@ -196,13 +196,28 @@ header{
 			.hamburger{
 				display: none;
 			}
+			div{
+				display: none;
+			}
 			.second-nav{
-				display: flex;
+				display: flex; 
 
-				div{
-					display: none;
+				li{
+					margin-top: 22px;
 				}
 
+				a{	
+					text-decoration: none;
+					font-size: 1.3em;
+					color: $secondary-color;
+					text-transform: uppercase;
+					padding: 0 12%;
+					border
+					
+					&:hover{
+						color: $primary-color;
+					}
+				}
 			}
 		}
 	}
@@ -225,7 +240,7 @@ header{
 
 		nav{
 			.second-nav{
-				margin-top: 25px
+				
 			}	
 
 			a{
