@@ -202,46 +202,69 @@ header{
 			}
 		}
 	}
+	.flex{
+		display: block;
+		.student{
+			figure{
+				margin: 20px 5%;
+				display: flex;
+				margin-bottom: 20px;
 
-	.student{
+				figcaption{
+					line-height: 20px;
+					padding-left: 5%;
 
-		figure{
-			margin: 20px 5%;
-			display: flex;
-			justify-content: space-between;
-			margin-bottom: 20px;
+					span{
+						font-size: 1.3em;
+					}
+				}
+			}
+		}
 
-			figcaption{
-				line-height: 20px;
+		.info{
+			background: $secondary-color;
+			padding: 20px 0%;
 
+			figure{
+				figcaption{
+					color: $accent-color2;
+
+					h3{
+						font-size: 1.9em;
+					}
+
+					p{
+						margin: 15px 0 30px;
+					}
+
+					a{
+						text-decoration: none;
+						color: $accent-color;
+
+						&:hover{
+							color: $primary-color;
+						}
+					}
+				}
 			}
 		}
 	}
 
-	.info{
-		background: $secondary-color;
-		padding: 20px 0%;
+	footer{
+		background: $accent-color2;
+		color: $secondary-color;
+		padding: 20px 5%;
 
-		figure{
-			figcaption{
-				color: $accent-color2;
+		p{
+			padding-bottom: 10px;
+		}
+		
+		a{
+			text-decoration: none;
+			color: $primary-color;
 
-				h3{
-					font-size: 1.9em;
-				}
-
-				p{
-					margin: 15px 0 30px;
-				}
-
-				a{
-					text-decoration: none;
-					color: $accent-color;
-
-					&:hover{
-						color: $primary-color;
-					}
-				}
+			&:hover{
+				color: $accent-color;
 			}
 		}
 	}
@@ -274,6 +297,12 @@ header{
 			 	transition: .5s;
 			}
 		}
+
+		.flex{
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+		}	
 	}
 }
 

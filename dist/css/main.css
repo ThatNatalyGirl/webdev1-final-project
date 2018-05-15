@@ -245,41 +245,68 @@ header nav .second-nav {
 	color: #00999e;
 }
 
-.home-section .student figure {
+.home-section .flex {
+	display: block;
+}
+
+.home-section .flex .student figure {
 	margin: 20px 5%;
 	display: flex;
-	justify-content: space-between;
 	margin-bottom: 20px;
 }
 
-.home-section .student figure figcaption {
+.home-section .flex .student figure figcaption {
 	line-height: 20px;
+	padding-left: 5%;
 }
 
-.home-section .info {
+.home-section .flex .student figure figcaption span {
+	font-size: 1.3em;
+}
+
+.home-section .flex .info {
 	background: #7f4882;
 	padding: 20px 0%;
 }
 
-.home-section .info figure figcaption {
+.home-section .flex .info figure figcaption {
 	color: #162343;
 }
 
-.home-section .info figure figcaption h3 {
+.home-section .flex .info figure figcaption h3 {
 	font-size: 1.9em;
 }
 
-.home-section .info figure figcaption p {
+.home-section .flex .info figure figcaption p {
 	margin: 15px 0 30px;
 }
 
-.home-section .info figure figcaption a {
+.home-section .flex .info figure figcaption a {
 	text-decoration: none;
 	color: #00999e;
 }
 
-.home-section .info figure figcaption a:hover {
+.home-section .flex .info figure figcaption a:hover {
 	color: #94d6ba;
+}
+
+.home-section footer {
+	background: #162343;
+	color: #7f4882;
+	padding: 20px 5%;
+}
+
+.home-section footer p {
+	padding-bottom: 10px;
+}
+
+.home-section footer a {
+	text-decoration: none;
+	color: #94d6ba;
+}
+
+.home-section footer a:hover {
+	color: #00999e;
 }
 
 /*Large Phone*/
@@ -299,6 +326,11 @@ header nav .second-nav {
 	.home-section .hero h2 {
 		font-size: 2.5em;
 		transition: .5s;
+	}
+	.home-section .flex {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
 	}
 }
 
