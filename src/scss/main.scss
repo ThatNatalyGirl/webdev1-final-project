@@ -26,7 +26,7 @@ $accent-color2: #162343;
 	box-sizing: border-box;
 }
 html{
-	background-color: $accent-color;
+	background-color: grey;
 	font-family: 'Arvo', serif;
 }
 
@@ -34,12 +34,6 @@ header{
 	background: $accent-color2;
 	color: $primary-color; 
 	width: 100%;
-
-	.page{
-		display: flex;
-		justify-content: space-between;
-		padding: 20px 5% 20px;
-	}
 		
 	h1{
 		text-transform: uppercase;
@@ -136,6 +130,7 @@ header{
 		background-image: url(../img/homebg.jpg);
 		background-position: center;
 		background-repeat: no-repeat; 
+		background-size: cover;
 		height: 485px;
 		
 		h2{
@@ -204,6 +199,7 @@ header{
 	}
 	.flex{
 		display: block;
+		background: $accent-color;
 		.student{
 			figure{
 				margin: 20px 5%;
@@ -230,7 +226,7 @@ header{
 					color: $accent-color2;
 
 					h3{
-						font-size: 1.9em;
+						font-size: 1.8em;
 					}
 
 					p{
@@ -298,11 +294,17 @@ header{
 			}
 		}
 
-		.flex{
+		.page{
 			display: flex;
-			flex-direction: column;
-			flex-wrap: wrap;
-		}	
+			.flex{
+				width: 100%;
+				margin-top: -205px;
+				flex: 1
+			}	
+			.about{
+
+			}
+		}
 	}
 }
 

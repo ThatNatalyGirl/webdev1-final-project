@@ -73,7 +73,7 @@ table {
 }
 
 html {
-	background-color: #00999e;
+	background-color: grey;
 	font-family: 'Arvo', serif;
 }
 
@@ -81,12 +81,6 @@ header {
 	background: #162343;
 	color: #94d6ba;
 	width: 100%;
-}
-
-header .page {
-	display: flex;
-	justify-content: space-between;
-	padding: 20px 5% 20px;
 }
 
 header h1 {
@@ -177,6 +171,7 @@ header nav .second-nav {
 	background-image: url(../img/homebg.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
+	background-size: cover;
 	height: 485px;
 }
 
@@ -247,6 +242,7 @@ header nav .second-nav {
 
 .home-section .flex {
 	display: block;
+	background: #00999e;
 }
 
 .home-section .flex .student figure {
@@ -274,7 +270,7 @@ header nav .second-nav {
 }
 
 .home-section .flex .info figure figcaption h3 {
-	font-size: 1.9em;
+	font-size: 1.8em;
 }
 
 .home-section .flex .info figure figcaption p {
@@ -327,10 +323,13 @@ header nav .second-nav {
 		font-size: 2.5em;
 		transition: .5s;
 	}
-	.home-section .flex {
+	.home-section .page {
 		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
+	}
+	.home-section .page .flex {
+		width: 100%;
+		margin-top: -205px;
+		flex: 1;
 	}
 }
 
