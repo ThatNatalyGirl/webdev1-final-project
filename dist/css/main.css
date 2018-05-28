@@ -67,6 +67,125 @@ table {
 	border-spacing: 0;
 }
 
+.hero {
+	background-image: url(../img/homebg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 485px;
+}
+
+.hero h2 {
+	padding: 30px 5%;
+	float: left;
+	background-color: #94d6ba;
+	opacity: .9;
+	margin: 60px 0;
+	display: flex;
+	flex: 1 100%;
+	font-size: 1.65em;
+	color: #162343;
+	flex: 2;
+	transition: .5s;
+}
+
+.hero p {
+	font-size: 60px;
+	color: #00999e;
+	flex: 1;
+	transition: .5s;
+}
+
+.about {
+	background-color: #94d6ba;
+}
+
+.about h3 {
+	padding: 15px 5%;
+	font-size: 2em;
+	color: #94d6ba;
+	background: #162343;
+}
+
+.about h3 span {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #94d6ba;
+}
+
+.about div {
+	padding: 20px 5% 50px;
+}
+
+.about div ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+.about div ul li {
+	border: 2px solid #162343;
+}
+
+.about div p {
+	margin: 20px 0;
+	color: #162343;
+}
+
+.about div a {
+	text-decoration: none;
+	color: #7f4882;
+}
+
+.about div a:hover {
+	color: #00999e;
+}
+
+.flex {
+	display: block;
+	background: #00999e;
+}
+
+.flex .student figure {
+	margin: 20px 5%;
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.flex .student figure figcaption {
+	line-height: 20px;
+	padding-left: 5%;
+}
+
+.flex .student figure figcaption span {
+	font-size: 1.3em;
+}
+
+.info {
+	background: #7f4882;
+	padding: 20px 0%;
+}
+
+.info figure figcaption {
+	color: #162343;
+}
+
+.info figure figcaption h3 {
+	font-size: 1.8em;
+}
+
+.info figure figcaption p {
+	margin: 15px 0 30px;
+}
+
+.info figure figcaption a {
+	text-decoration: none;
+	color: #00999e;
+}
+
+.info figure figcaption a:hover {
+	color: #94d6ba;
+}
+
 /* 1. Main Layout ================================= */
 * {
 	box-sizing: border-box;
@@ -94,7 +213,7 @@ header h1 span {
 	color: #00999e;
 }
 
-header nav .hamburger button {
+nav .hamburger button {
 	background: none;
 	border: none;
 	width: 65px;
@@ -102,18 +221,18 @@ header nav .hamburger button {
 	transition: .25s;
 }
 
-header nav .hamburger button div {
+nav .hamburger button div {
 	background: #00999e;
 	height: 8px;
 	border-radius: 0px;
 	margin: 0 0 8px;
 }
 
-header nav .hamburger button:hover {
+nav .hamburger button:hover {
 	transform: rotate(90deg);
 }
 
-header nav .first-nav {
+nav .first-nav {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -124,13 +243,13 @@ header nav .first-nav {
 	padding-top: 40px;
 }
 
-header nav .first-nav li {
+nav .first-nav li {
 	margin: 55px 6% 0;
 	font-size: 20px;
 	text-align: center;
 }
 
-header nav .first-nav a {
+nav .first-nav a {
 	color: #94d6ba;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -139,12 +258,12 @@ header nav .first-nav a {
 	transition: .3s;
 }
 
-header nav .first-nav a:hover {
+nav .first-nav a:hover {
 	color: #7f4882;
 	cursor: pointer;
 }
 
-header nav .first-nav button {
+nav .first-nav button {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -159,149 +278,30 @@ header nav .first-nav button {
 	transition: .3s;
 }
 
-header nav .first-nav button:hover {
+nav .first-nav button:hover {
 	color: #7f4882;
 }
 
-header nav .second-nav {
+nav .second-nav {
 	display: none;
 }
 
-.home-section .hero {
-	background-image: url(../img/homebg.jpg);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 485px;
-}
-
-.home-section .hero h2 {
-	padding: 30px 5%;
-	float: left;
-	background-color: #94d6ba;
-	opacity: .9;
-	margin: 60px 0;
-	display: flex;
-	flex: 1 100%;
-	font-size: 1.65em;
-	color: #162343;
-	flex: 2;
-	transition: .5s;
-}
-
-.home-section .hero p {
-	font-size: 60px;
-	color: #00999e;
-	flex: 1;
-	transition: .5s;
-}
-
-.home-section .about {
-	background-color: #94d6ba;
-}
-
-.home-section .about h3 {
-	padding: 15px 5%;
-	font-size: 2em;
-	color: #94d6ba;
-	background: #162343;
-}
-
-.home-section .about h3 span {
-	text-transform: uppercase;
-	font-weight: bold;
-	color: #94d6ba;
-}
-
-.home-section .about div {
-	padding: 20px 5% 50px;
-}
-
-.home-section .about div ul {
-	display: flex;
-	justify-content: space-between;
-}
-
-.home-section .about div ul li {
-	border: 2px solid #162343;
-}
-
-.home-section .about div p {
-	margin: 20px 0;
-	color: #162343;
-}
-
-.home-section .about div a {
-	text-decoration: none;
-	color: #7f4882;
-}
-
-.home-section .about div a:hover {
-	color: #00999e;
-}
-
-.home-section .flex {
-	display: block;
-	background: #00999e;
-}
-
-.home-section .flex .student figure {
-	margin: 20px 5%;
-	display: flex;
-	margin-bottom: 20px;
-}
-
-.home-section .flex .student figure figcaption {
-	line-height: 20px;
-	padding-left: 5%;
-}
-
-.home-section .flex .student figure figcaption span {
-	font-size: 1.3em;
-}
-
-.home-section .flex .info {
-	background: #7f4882;
-	padding: 20px 0%;
-}
-
-.home-section .flex .info figure figcaption {
-	color: #162343;
-}
-
-.home-section .flex .info figure figcaption h3 {
-	font-size: 1.8em;
-}
-
-.home-section .flex .info figure figcaption p {
-	margin: 15px 0 30px;
-}
-
-.home-section .flex .info figure figcaption a {
-	text-decoration: none;
-	color: #00999e;
-}
-
-.home-section .flex .info figure figcaption a:hover {
-	color: #94d6ba;
-}
-
-.home-section footer {
+footer {
 	background: #162343;
 	color: #7f4882;
 	padding: 20px 5%;
 }
 
-.home-section footer p {
+footer p {
 	padding-bottom: 10px;
 }
 
-.home-section footer a {
+footer a {
 	text-decoration: none;
 	color: #94d6ba;
 }
 
-.home-section footer a:hover {
+footer a:hover {
 	color: #00999e;
 }
 
@@ -331,24 +331,29 @@ header nav .second-nav {
 		margin-top: -205px;
 		flex: 1;
 	}
+	.home-section .page .about {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+	}
 }
 
 /*Large Tablet*/
 @media screen and (min-width: 1024px) {
-	header nav .hamburger {
+	nav .hamburger {
 		display: none;
 	}
-	header nav div {
+	nav div {
 		display: none;
 	}
-	header nav .second-nav {
+	nav .second-nav {
 		display: flex;
 		width: 0%;
 	}
-	header nav .second-nav li {
+	nav .second-nav li {
 		margin-top: 22px;
 	}
-	header nav .second-nav a {
+	nav .second-nav a {
 		text-decoration: none;
 		font-size: 1.1em;
 		color: #7f4882;
@@ -357,7 +362,7 @@ header nav .second-nav {
 		border-left: 1px solid #94d6ba;
 		border-right: 1px solid #94d6ba;
 	}
-	header nav .second-nav a:hover {
+	nav .second-nav a:hover {
 		color: #94d6ba;
 	}
 }
