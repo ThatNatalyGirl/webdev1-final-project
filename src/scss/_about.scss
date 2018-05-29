@@ -1,0 +1,49 @@
+//about section
+$primary-color: #94d6ba;
+$secondary-color: #7f4882;
+$accent-color: #00999e;
+$accent-color2: #162343;
+
+.about-section{
+	.hero{
+		background-image: url(../img/bg2.jpg);
+	}	
+
+	h4{
+		margin: 30px 0;
+	}
+}
+
+.about-bod{
+	line-height: 20px;
+
+	span{
+		font-weight: bold;
+	}
+
+	.border{
+		border-bottom: solid 2px $secondary-color;
+	}
+
+	a{
+		text-decoration: none;
+		color: $secondary-color;
+		transition: .2s;
+
+		&:hover{
+			color: $primary-color;
+			cursor: pointer;
+			transition: .2s;
+		}
+	}
+
+	.cat{
+		&:hover{
+			color: $accent-color;
+		}
+	}
+
+	aside{
+		height: 700px;
+	}
+}

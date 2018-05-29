@@ -1,0 +1,39 @@
+//work section
+
+.work-section{
+	.hero{
+		background-image: url(../img/bg3.jpg);
+	}	
+
+	li{
+		padding-bottom: 30px;
+
+		h5{
+			font-size: 1.2em;
+			padding-bottom: 10px;
+		}
+
+		p{
+			font-size: .9em;
+			line-height: 18px;
+		}
+	}
+
+	figure{
+		display: flex;
+		margin-bottom: 30px;
+
+		figcaption{
+			margin: 20px 0 0 3%;
+
+			p{
+				margin-top: 20px;
+			}
+		}
+	}
+
+	aside{
+		height: 450px; 
+	}
+
+}

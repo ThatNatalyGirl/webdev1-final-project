@@ -67,33 +67,8 @@ table {
 	border-spacing: 0;
 }
 
-.hero {
-	background-image: url(../img/homebg.jpg);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 485px;
-}
-
-.hero h2 {
-	padding: 30px 5%;
-	float: left;
-	background-color: #94d6ba;
-	opacity: .9;
-	margin: 60px 0;
-	display: flex;
-	flex: 1 100%;
-	font-size: 1.65em;
-	color: #162343;
-	flex: 2;
-	transition: .5s;
-}
-
-.hero p {
-	font-size: 60px;
-	color: #00999e;
-	flex: 1;
-	transition: .5s;
+.home-section .hero {
+	background-image: url(../img/bg1.jpg);
 }
 
 .about {
@@ -186,13 +161,114 @@ table {
 	color: #94d6ba;
 }
 
+.about-section .hero {
+	background-image: url(../img/bg2.jpg);
+}
+
+.about-section h4 {
+	margin: 30px 0;
+}
+
+.about-bod {
+	line-height: 20px;
+}
+
+.about-bod span {
+	font-weight: bold;
+}
+
+.about-bod .border {
+	border-bottom: solid 2px #7f4882;
+}
+
+.about-bod a {
+	text-decoration: none;
+	color: #7f4882;
+	transition: .2s;
+}
+
+.about-bod a:hover {
+	color: #94d6ba;
+	cursor: pointer;
+	transition: .2s;
+}
+
+.about-bod .cat:hover {
+	color: #00999e;
+}
+
+.about-bod aside {
+	height: 700px;
+}
+
+.work-section .hero {
+	background-image: url(../img/bg3.jpg);
+}
+
+.work-section li {
+	padding-bottom: 30px;
+}
+
+.work-section li h5 {
+	font-size: 1.2em;
+	padding-bottom: 10px;
+}
+
+.work-section li p {
+	font-size: .9em;
+	line-height: 18px;
+}
+
+.work-section figure {
+	display: flex;
+	margin-bottom: 30px;
+}
+
+.work-section figure figcaption {
+	margin: 20px 0 0 3%;
+}
+
+.work-section figure figcaption p {
+	margin-top: 20px;
+}
+
+.work-section aside {
+	height: 450px;
+}
+
+.resources-section .hero {
+	background-image: url(../img/bg4.jpg);
+}
+
+.resources-section .resources-bod {
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.resources-section .resources-bod div {
+	flex: 4;
+	margin-bottom: 20px;
+}
+
+.resources-section .resources-bod aside {
+	flex: 2;
+	margin-bottom: 20px;
+	margin-right: 3%;
+}
+
+.resources-section .resources-bod aside .underlined {
+	text-decoration: underline;
+	line-height: 20px;
+	padding-top: 20px;
+}
+
 /* 1. Main Layout ================================= */
 * {
 	box-sizing: border-box;
 }
 
 html {
-	background-color: grey;
+	background-color: #292728;
 	font-family: 'Arvo', serif;
 }
 
@@ -286,6 +362,73 @@ nav .second-nav {
 	display: none;
 }
 
+.hero {
+	background-image: url(../img/homebg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 485px;
+}
+
+.hero h2 {
+	padding: 30px 5%;
+	float: left;
+	background-color: #94d6ba;
+	opacity: .9;
+	margin: 60px 0;
+	display: flex;
+	flex: 1 100%;
+	font-size: 1.65em;
+	color: #162343;
+	flex: 2;
+	transition: .5s;
+}
+
+.hero p {
+	font-size: 60px;
+	color: #00999e;
+	flex: 1;
+	transition: .5s;
+}
+
+.body {
+	display: flex;
+	flex-direction: column;
+	margin: -100px 5% 30px;
+	color: #162343;
+}
+
+.body div {
+	background: #94d6ba;
+	margin-bottom: 3%;
+}
+
+.body aside {
+	background: #00999e;
+}
+
+.body aside section {
+	line-height: 20px;
+}
+
+.body div, .body aside {
+	padding: 30px 4%;
+}
+
+.body div h3, .body aside h3 {
+	font-size: 1.7em;
+	padding-bottom: 30px;
+	line-height: 28px;
+}
+
+.body div p, .body aside p {
+	margin-bottom: 15px;
+}
+
+.body div h4, .body aside h4 {
+	font-size: 1.4em;
+}
+
 footer {
 	background: #162343;
 	color: #7f4882;
@@ -325,6 +468,7 @@ footer a:hover {
 	}
 	.home-section .page {
 		display: flex;
+		background-color: #292728;
 	}
 	.home-section .page .flex {
 		width: 100%;
@@ -335,6 +479,16 @@ footer a:hover {
 		display: flex;
 		flex-direction: column;
 		flex: 1;
+	}
+	.body {
+		flex-direction: row;
+	}
+	.body div, .body aside {
+		flex: 1;
+	}
+	.body div {
+		margin-right: 3%;
+		margin-bottom: 0;
 	}
 }
 

@@ -1,0 +1,31 @@
+//resource section
+$accent-color2: #162343;
+
+.resources-section{
+	.hero{
+		background-image: url(../img/bg4.jpg);
+	}
+
+	.resources-bod{
+		flex-wrap: wrap;
+		justify-content: space-around;
+
+		div{
+			flex: 4;
+			margin-bottom: 20px;
+		}
+
+		aside{
+			flex: 2;
+			margin-bottom: 20px;
+			margin-right: 3%;
+			width: 40%;
+
+			.underlined{
+				text-decoration: underline;
+				line-height: 20px;
+				padding-top: 20px;
+			}
+		}
+	}
+}
