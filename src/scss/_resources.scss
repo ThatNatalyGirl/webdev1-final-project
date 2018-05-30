@@ -1,6 +1,11 @@
 //resource section
 $accent-color2: #162343;
 
+
+.body{
+	margin: -100px 0% 30px 5%;
+}
+
 .resources-section{
 	.hero{
 		background-image: url(../img/bg4.jpg);
@@ -8,18 +13,15 @@ $accent-color2: #162343;
 
 	.resources-bod{
 		flex-wrap: wrap;
-		justify-content: space-around;
+		justify-content: space-between;
 
 		div{
-			flex: 4;
 			margin-bottom: 20px;
 		}
 
 		aside{
-			flex: 2;
+			flex: 1;
 			margin-bottom: 20px;
-			margin-right: 3%;
-			width: 40%;
 
 			.underlined{
 				text-decoration: underline;
@@ -28,4 +30,24 @@ $accent-color2: #162343;
 			}
 		}
 	}
+
+	figure{
+		img{
+			width: 100%;
+			margin: 5px 2%;
+		}
+	}
+}
+
+@media screen and (min-width: 768px){
+	.body div, .body aside {
+		flex: none;
+	}
+
+	.resources-bod{
+		aside{
+			margin-right: 3%;
+		}	
+	}
+
 }

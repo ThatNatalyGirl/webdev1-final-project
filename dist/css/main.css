@@ -236,30 +236,46 @@ table {
 	height: 450px;
 }
 
+.body {
+	margin: -100px 0% 30px 5%;
+}
+
 .resources-section .hero {
 	background-image: url(../img/bg4.jpg);
 }
 
 .resources-section .resources-bod {
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 .resources-section .resources-bod div {
-	flex: 4;
 	margin-bottom: 20px;
 }
 
 .resources-section .resources-bod aside {
-	flex: 2;
+	flex: 1;
 	margin-bottom: 20px;
-	margin-right: 3%;
 }
 
 .resources-section .resources-bod aside .underlined {
 	text-decoration: underline;
 	line-height: 20px;
 	padding-top: 20px;
+}
+
+.resources-section figure img {
+	width: 100%;
+	margin: 5px 2%;
+}
+
+@media screen and (min-width: 768px) {
+	.body div, .body aside {
+		flex: none;
+	}
+	.resources-bod aside {
+		margin-right: 3%;
+	}
 }
 
 /* 1. Main Layout ================================= */
@@ -389,6 +405,10 @@ nav .second-nav {
 	color: #00999e;
 	flex: 1;
 	transition: .5s;
+}
+
+.sect {
+	background: #292728;
 }
 
 .body {
@@ -526,7 +546,6 @@ footer a:hover {
 	.wrapper {
 		background-color: #c7c9c6;
 		float: left;
-		margin: 0 16.19718309859155%;
 	}
 	header {
 		height: 70px;

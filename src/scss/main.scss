@@ -18,7 +18,7 @@ TABLE OF CONTENTS:
 @import 'home';
 @import 'about';
 @import 'work';
-@import 'resource';
+@import 'resources';
 $primary-color: #94d6ba;
 $secondary-color: #7f4882;
 $accent-color: #00999e;
@@ -155,6 +155,10 @@ nav{
 		flex: 1;
 		transition: .5s;
 	}	
+}
+
+.sect{
+	background: #292728;
 }
 
 .body{
@@ -315,7 +319,7 @@ footer{
 	.wrapper{
 		background-color: #c7c9c6;
 		float: left;
-		margin: 0 16.19718309859155%;
+		// margin: 0 16.19718309859155%;
 	}
 
 	header{
