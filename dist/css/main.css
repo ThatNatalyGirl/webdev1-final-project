@@ -128,7 +128,7 @@ table {
 .flex .student figure {
 	margin: 20px 5%;
 	display: flex;
-	margin-bottom: 20px;
+	margin-bottom: 0px;
 }
 
 .flex .student figure figcaption {
