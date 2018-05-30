@@ -324,9 +324,11 @@ footer{
 
 	header{
 		height: 70px;
+		transition: .25s;
 		
 		h1{
 			font-size: 2.6em;
+			transition: .25s;
 		}
 
 		nav{
@@ -337,6 +339,7 @@ footer{
 			a{
 				background: $accent-color2;
 				font-size: 15px;
+				transition: .25s;
 			}
 		}
 	}

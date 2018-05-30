@@ -17,11 +17,14 @@ $accent-color2: #162343;
 
 		div{
 			margin-bottom: 20px;
+			flex: auto;
+			transition: .5s;
 		}
 
 		aside{
 			flex: 1;
 			margin-bottom: 20px;
+			transition: .5s;
 
 			.underlined{
 				text-decoration: underline;
@@ -34,20 +37,30 @@ $accent-color2: #162343;
 	figure{
 		img{
 			width: 100%;
-			margin: 5px 2%;
+			margin: 5px 0%;
 		}
 	}
 }
 
 @media screen and (min-width: 768px){
-	.body div, .body aside {
-		flex: none;
-	}
+	.resources-section{
+		.resources-bod{
+			div {
+				flex-basis: 63.5%;
+				transition: .5s;
+			}
+		}
 
-	.resources-bod{
-		aside{
-			margin-right: 3%;
-		}	
-	}
+		.resources-bod{
+			aside{
+				margin-right: 3%;
+				flex-basis: 30%;
+				transition: .5s;
+			}	
+		}
+	}	
+}
+
+@media screen and (min-width: 1024px){
 
 }

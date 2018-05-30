@@ -94,11 +94,16 @@ table {
 
 .about div ul {
 	display: flex;
-	justify-content: space-around;
 }
 
 .about div ul li {
-	border: 2px solid #162343;
+	border: 5px solid #162343;
+	margin-right: 2%;
+}
+
+.about div ul li img {
+	width: 100%;
+	height: 100%;
 }
 
 .about div p {
@@ -251,11 +256,14 @@ table {
 
 .resources-section .resources-bod div {
 	margin-bottom: 20px;
+	flex: auto;
+	transition: .5s;
 }
 
 .resources-section .resources-bod aside {
 	flex: 1;
 	margin-bottom: 20px;
+	transition: .5s;
 }
 
 .resources-section .resources-bod aside .underlined {
@@ -266,15 +274,18 @@ table {
 
 .resources-section figure img {
 	width: 100%;
-	margin: 5px 2%;
+	margin: 5px 0%;
 }
 
 @media screen and (min-width: 768px) {
-	.body div, .body aside {
-		flex: none;
+	.resources-section .resources-bod div {
+		flex-basis: 63.5%;
+		transition: .5s;
 	}
-	.resources-bod aside {
+	.resources-section .resources-bod aside {
 		margin-right: 3%;
+		flex-basis: 30%;
+		transition: .5s;
 	}
 }
 
@@ -549,13 +560,16 @@ footer a:hover {
 	}
 	header {
 		height: 70px;
+		transition: .25s;
 	}
 	header h1 {
 		font-size: 2.6em;
+		transition: .25s;
 	}
 	header nav a {
 		background: #162343;
 		font-size: 15px;
+		transition: .25s;
 	}
 }
 
