@@ -1,4 +1,7 @@
 //resource section
+$primary-color: #94d6ba;
+$secondary-color: #7f4882;
+$accent-color: #00999e;
 $accent-color2: #162343;
 
 
@@ -25,11 +28,17 @@ $accent-color2: #162343;
 			flex: 1;
 			margin-bottom: 20px;
 			transition: .5s;
+			display: flex;
+			flex-direction: column;
 
 			.underlined{
-				text-decoration: underline;
+				color: $accent-color2;
 				line-height: 20px;
 				padding-top: 20px;
+
+				&:hover{
+					color: $secondary-color;
+				}
 			}
 		}
 	}
