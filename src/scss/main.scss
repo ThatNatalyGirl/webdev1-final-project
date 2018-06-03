@@ -1,19 +1,4 @@
-/* 
-==============================================
-CONTENT:	Project Name Here
-AUTHOR:		Your Name Here
-==============================================
 
-TABLE OF CONTENTS:
-
-0. Reset
-1. Main Layout
-2. Content
-
-==============================================
-*/
-
-/* 0. Reset ================================= */
 @import 'reset';
 @import 'home';
 @import 'about';
@@ -38,7 +23,10 @@ header{
 	background: $accent-color2;
 	color: $primary-color; 
 	width: 100%;
-		
+	display: flex;
+	justify-content: space-between;
+	padding: 0 5%;
+
 	h1{
 		text-transform: uppercase;
 		padding: 15px 0;
@@ -249,6 +237,7 @@ footer{
 		.page{
 			display: flex;
 			background-color: #292728;
+
 			.flex{
 				width: 100%;
 				margin-top: -205px;
@@ -290,7 +279,6 @@ footer{
 
 		.second-nav{
 			display: flex; 
-			width: 0%;
 
 			li{
 				margin-top: 22px;
@@ -301,13 +289,17 @@ footer{
 				font-size: 1.1em;
 				color: $secondary-color;
 				text-transform: uppercase;
-				margin: 45px 12%;
+				margin: 10px;
 				border-left: 1px solid $primary-color;
 				border-right: 1px solid $primary-color;
 
 				&:hover{
 					color: $primary-color;
 				}
+			}
+
+			.active-page{
+				color: $primary-color;
 			}
 		}
 	}
@@ -319,7 +311,6 @@ footer{
 	.wrapper{
 		background-color: #c7c9c6;
 		float: left;
-		// margin: 0 16.19718309859155%;
 	}
 
 	header{
@@ -331,16 +322,10 @@ footer{
 			transition: .25s;
 		}
 
-		nav{
-			.second-nav{
-				
-			}	
-
-			a{
-				background: $accent-color2;
-				font-size: 15px;
-				transition: .25s;
-			}
+		a{
+			background: $accent-color2;
+			font-size: 15px;
+			transition: .25s;
 		}
 	}
 }

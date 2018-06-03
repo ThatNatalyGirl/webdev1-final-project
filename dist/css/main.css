@@ -1,18 +1,3 @@
-/* 
-==============================================
-CONTENT:	Project Name Here
-AUTHOR:		Your Name Here
-==============================================
-
-TABLE OF CONTENTS:
-
-0. Reset
-1. Main Layout
-2. Content
-
-==============================================
-*/
-/* 0. Reset ================================= */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -208,7 +193,7 @@ table {
 }
 
 .about-bod aside {
-	height: 700px;
+	height: 100%;
 }
 
 .work-section .hero {
@@ -314,6 +299,9 @@ header {
 	background: #162343;
 	color: #94d6ba;
 	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 5%;
 }
 
 header h1 {
@@ -544,7 +532,6 @@ footer a:hover {
 	}
 	nav .second-nav {
 		display: flex;
-		width: 0%;
 	}
 	nav .second-nav li {
 		margin-top: 22px;
@@ -554,11 +541,14 @@ footer a:hover {
 		font-size: 1.1em;
 		color: #7f4882;
 		text-transform: uppercase;
-		margin: 45px 12%;
+		margin: 10px;
 		border-left: 1px solid #94d6ba;
 		border-right: 1px solid #94d6ba;
 	}
 	nav .second-nav a:hover {
+		color: #94d6ba;
+	}
+	nav .second-nav .active-page {
 		color: #94d6ba;
 	}
 }
@@ -577,7 +567,7 @@ footer a:hover {
 		font-size: 2.6em;
 		transition: .25s;
 	}
-	header nav a {
+	header a {
 		background: #162343;
 		font-size: 15px;
 		transition: .25s;
