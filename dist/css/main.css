@@ -424,7 +424,7 @@ nav .second-nav {
 .body {
 	display: flex;
 	flex-direction: column;
-	margin: -100px 5% 30px;
+	margin: -100px 5% 0px;
 	color: #162343;
 }
 
@@ -502,7 +502,7 @@ footer a:hover {
 	}
 	.home-section .page .flex {
 		width: 100%;
-		margin-top: -205px;
+		margin-top: -217px;
 		flex: 1;
 	}
 	.home-section .page .about {

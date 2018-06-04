@@ -152,7 +152,7 @@ nav{
 .body{
 	display: flex;
 	flex-direction: column;
-	margin: -100px 5% 30px;
+	margin: -100px 5% 0px;
 	color: $accent-color2;
 
 	div{
@@ -240,7 +240,7 @@ footer{
 
 			.flex{
 				width: 100%;
-				margin-top: -205px;
+				margin-top: -217px;
 				flex: 1;
 			}	
 			.about{
