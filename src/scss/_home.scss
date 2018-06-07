@@ -6,6 +6,10 @@ $accent-color2: #162343;
 .home-section{
 	.hero{
 		background-image: url(../img/bg1.jpg);
+	}
+
+	.page{
+		margin-bottom: 20px;
 	}	
 }
 
@@ -60,6 +64,7 @@ $accent-color2: #162343;
 	display: block;
 	background: $accent-color;
 	.student{
+		padding-bottom: 20px;
 		figure{
 			margin: 20px 5%;
 			display: flex;
